@@ -29,7 +29,7 @@
         
         
       <div class="row employeeOptions">
-          <button type="button" class="btn btn-lg btn-primary" uib-popover="I appeared on mouse enter!" popover-trigger="'mouseenter'" ng-click='modalOpen()'>Add Employee</button>        
+          <button type="button" class="btn btn-lg btn-primary" uib-popover="Add a new Employee" popover-trigger="'mouseenter'" ng-click='modalOpen()'>Add Employee</button>        
       </div>
         
       <div class="row editEmployee">
@@ -39,7 +39,7 @@
                   <tbody>
                       <tr ng-repeat="emp in allEmp">
                           <td>{{emp.name}}</td><td>{{emp.email}}</td><td>{{emp.department}}</td><td>{{emp.gender}}</td><td>{{emp.date | date:'yyyy-MM-dd'}}</td><td>{{emp.age}}</td>
-                          <td><span class="actionbuttons label label-primary" ng-click='modalOpen(emp)'>Update</span>&nbsp;&nbsp;<span class="actionbuttons label label-warning" ng-click="removeEmployee(emp.email)">Delete</span></td>
+                          <td><span class="actionbuttons label label-primary" uib-popover="Update Employee" popover-trigger="'mouseenter'" ng-click='modalOpen(emp)'>Update</span>&nbsp;&nbsp;<span class="actionbuttons label label-warning" uib-popover="Delete Employee" popover-trigger="'mouseenter'" ng-click="removeEmployee(emp.email)">Delete</span></td>
                       </tr>
                   </tbody>
               </table>
