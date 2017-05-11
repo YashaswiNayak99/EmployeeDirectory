@@ -79,6 +79,9 @@ body {
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
+      padding:5px;
+    font-family: 'Courgette', cursive;
+    background: linear-gradient(135deg, #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%);
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
